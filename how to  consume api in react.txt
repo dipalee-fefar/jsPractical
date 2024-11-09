@@ -1,0 +1,16 @@
+how to  consume api in react
+
+step 1 : create api
+step 2 : get url of that api
+step 3 : make variable of useState to store date 
+step 4 : fetching that data
+
+	syntax:::
+
+	useEffect(()=>{
+		fetch('apiurl')
+		.then()
+		.then()
+		});
+step 5 : map that data
+step 6 : display (return) that data

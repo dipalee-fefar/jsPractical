@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <button id="b" onmouseover="random()">Start</button>
+    <button id="b2" onclick="stop()">Stop</button>
+    <script>
+        function random() {
+            let r = Math.ceil(Math.random() * 255);
+            let g = Math.ceil(Math.random() * 255);
+            let b = Math.ceil(Math.random() * 255);
+            document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+
+        }
+        function stop(){
+            document.getElementById("b2").style.clearInterval=true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 29</title>
+</head>
+<body>
+    <p id="id1"></p>
+    <script>
+        var fact;
+        const prime = (x) => {
+            for(var i=2;i<x;i++){
+                if (x%i==0)
+                fact++;
+                break;
+            }
+            if(fact==0){
+                alert("your number is prime");
+            }
+            else{
+                alert("your number is not prime");
+            }
+        }
+        document.getElementById("id1").innerHTML=alert();
+    </script>
+</body>
+</html>

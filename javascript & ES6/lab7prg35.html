@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>include,find</title>
+</head>
+<body>
+    <p id="id1"></p>
+    <p id="id2"></p>
+    <script>
+        let myid1 = "this is javascript lab";
+        myid1.includes("t");
+        document.getElementById("id1").innerHTML=myid1;
+
+        // let myid2 = "this is javascript lab";
+        // myid2.find((temp)=>{
+        //     if (temp=='a') {
+        //         console.log("a");
+        //         return true;
+        //     }
+        //     else
+        //     {
+        //         return false;
+        //     }
+        // });
+        var arr = [1,2,3,4,6]
+        console.log(arr.find((temp)=>temp>=3))
+        // document.getElementById("id2").innerHTML=myid2;
+
+    </script>
+</body>
+</html>

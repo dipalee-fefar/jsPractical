@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lcm of given to numbers</title>
+</head>
+<body>
+    <script>
+        var num1= prompt("enter first number");
+        var num2= prompt("enter second number");
+        var max;
+
+        if(num1>num2){
+            max=num1;
+        }
+        else{
+            max=num2;
+        }
+
+        for(var i=max;i<=num1*num2;i++){
+            if(i%num1==0 && i%num2==0){
+                document.write(i);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

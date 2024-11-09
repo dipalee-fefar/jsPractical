@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab5 prg22</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        class MyCls{
+            constructor(stdName,stdID){
+                this.stdName=stdName;
+                this.stdID=stdID;
+            }
+        }
+        const name= new MyCls("abc","001");
+        // const id= new MyCls("001");
+
+        document.getElementById("demo").innerHTML=name.stdName+" "+name.stdID;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event </title>
+    <style>
+        #box {
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="para" onmousemove="move()" onmouseout="out()" onmouseup="up()">lodfkjadshfh djfiuudh fhio dfihgkjd iodfukjsd viudfug diufid dufgh asaihk sdiufoi ashdfiuahdsifhads ngh asvhiahdsfkhasiulodfkjadshfh djfiuudh fhio dfihgkjd iodfukjsd viudfug diufid dufgh asaihk sdiufoi ashdfiuahdsifhads ngh asvhiahdsfkhasiulodfkjadshfh djfiuudh fhio dfihgkjd iodfukjsd viudfug diufid dufgh asaihk sdiufoi ashdfiuahdsifhads ngh asvhiahdsfkhasiu</p>
+
+
+    <button id="box" onclick="click()" ondblcklick="double()" onmousedown="down()" onmouseleave="leave()">Button </button>
+
+    <script>
+        function click(){
+        document.getElementById("box").style.backgroundColor="random";
+       }
+       function double(){
+        document.getElementById("box").style.backgroundColor="red";
+       }
+       function down(){
+        document.getElementById("box").style.backgroundColor ="green";
+       }
+       function leave(){
+        document.getElementById("box").style.backgroundColor ="yellow";
+       }
+       function move(){
+        document.getElementById("para").style.backgroundColor ="pink";
+       }
+       function out(){
+        document.getElementById("para").style.backgroundColor="orange";
+       }
+       function up(){
+        document.getElementById("para").style.backgroundColor="grey";
+       }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 3 program 2</title>
+</head>
+<body>
+    <script>
+        var num = parseInt(prompt("enter number to check number is armstrong or not"));
+        var sum=0;
+        var digits = num.toString().split(" ");
+        var power = digits.length;
+        temp=num;
+
+
+        if(num<=0){
+            alert("please enter a positive number");
+        }
+        else{
+            for(var i=0; i<power; i++){
+                sum=sum+Math.pow(parseInt(digits[i]), power);
+            }
+            if(sum==num ){
+                document.write("number is armstrong");
+            }
+            else{
+                document.write("number is not armstrong");
+            }
+        }
+    </script>
+</body>
+</html>
